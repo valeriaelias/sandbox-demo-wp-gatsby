@@ -1,0 +1,41 @@
+@use '../abstracts/index' as a;
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding-bottom: 6rem;
+  }
+}
+
+.split {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .split {
+    flex-direction: row;
+  }
+  
+  .split > * {
+    position: relative;
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 3em;
+  }
+
+  .split-col-40 {
+    flex-basis: 40%;
+  }
+}

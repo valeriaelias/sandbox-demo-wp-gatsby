@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  transition: all .3s cubic-bezier(0.55,0.085,0.68,0.53);
+  margin: 0.75rem;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,.09);
+  border-radius: 4px;
+  width: calc(100% - 1.5rem);
+  padding: 1rem 0;
+  background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .header {
+    margin: 0;
+    box-shadow: none;
+    padding: 1rem 0;
+  }
+}
