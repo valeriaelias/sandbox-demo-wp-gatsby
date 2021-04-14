@@ -62,8 +62,8 @@ const Nav = () => {
         </li>
 
         <li className={styles.navItem}>
-          <Link className={styles.navLink} to="#joinus">
-            Join Us
+          <Link className={styles.navLink} to="/blog/">
+            Blog
           </Link>
         </li>
       </ul>

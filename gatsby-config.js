@@ -25,6 +25,13 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
+    '@chakra-ui/gatsby-plugin',
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        url: 'http://localhost:8000/graphql',
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
